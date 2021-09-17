@@ -1,23 +1,21 @@
 import React from "react";
-import "./App.css";
+import style from "./App.less";
 
 function App() {
   console.log("App init");
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={`${style["center"]}`}>
+        <div className={`${style["content"]}`}>
+          <h1 className={`${style["title"]}`}>中午吃什么？吃什么？</h1>
+          <input
+            type="button"
+            className={`${style["big-button"]}`}
+            id="start"
+            value="开始"
+          />
+        </div>
+      </div>
     </div>
   );
 }
