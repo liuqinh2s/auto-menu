@@ -1,0 +1,1 @@
+import 'file-loader?name=[name].[ext]!../assets/index.html'
