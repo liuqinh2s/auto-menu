@@ -1,7 +1,11 @@
 import React, { useRef, useState } from "react";
 import style from "./App.less";
+import $ from "jquery";
 
 function App() {
+  const [title, setTitle] = useState("中午吃什么？吃什么？");
+  const [button, setButton] = useState("开始");
+  const [display, setDisplay] = useState("");
   const [menuList, setMenuList] = useState([
     "馄饨",
     "拉面",
@@ -41,36 +45,72 @@ function App() {
     "生煎",
     "炒年糕",
   ]);
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(-1);
   const timer: any = useRef();
+  const count = useRef(0);
 
   const handleClick = () => {
+    if (count.current > 6) {
+      alert("这么作？今天别吃了！");
+      setDisplay("none");
+    }
+
     if (timer.current) {
       clearInterval(timer.current);
       timer.current = null;
+      setTitle("中午吃什么，吃这个！");
     } else {
       timer.current = randomSelect();
+      count.current++;
     }
 
     function randomSelect() {
       return setInterval(() => {
         let index = Math.floor(Math.random() * menuList.length);
         setSelected(index);
+        setButton("停止");
+        flashing(index);
       }, 50);
     }
+
+    const flashing = (index: number) => {
+      $("<span class='temp'></span>")
+        .html(menuList[index])
+        .hide()
+        .css({
+          position: "absolute",
+          top: Math.random() * document.body.clientHeight,
+          left: Math.random() * document.body.clientWidth,
+          color: "rgba(0,0,0," + Math.random() + ")",
+          fontSize: Math.random() * (37 - 14) + 14 + "px",
+        })
+        .appendTo("body")
+        .fadeIn("slow", function () {
+          $(this).fadeOut("slow", () => {
+            $(this).remove();
+          });
+        });
+    };
   };
 
   return (
     <div className="App">
       <div className={`${style["center"]}`}>
         <div className={`${style["content"]}`}>
-          <h1 className={`${style["title"]}`}>中午吃什么？吃什么？</h1>
-          <span>{menuList[selected]}</span>
+          <h1 className={`${style["title"]}`}>
+            {title}
+            <br />
+            <br />
+            <b style={{ color: "#FF9733" }} id="what">
+              {menuList[selected]}
+            </b>
+          </h1>
           <input
             type="button"
             className={`${style["big-button"]}`}
+            style={{ display }}
             id="start"
-            value="开始"
+            value={button}
             onClick={handleClick}
           />
         </div>
