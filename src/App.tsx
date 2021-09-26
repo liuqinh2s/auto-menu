@@ -59,6 +59,7 @@ function App() {
       clearInterval(timer.current);
       timer.current = null;
       setTitle("中午吃什么，吃这个！");
+      setButton("不行，换一个");
     } else {
       timer.current = randomSelect();
       count.current++;
@@ -74,6 +75,7 @@ function App() {
     }
 
     const flashing = (index: number) => {
+      console.log($(document).height());
       $("<span class='temp'></span>")
         .html(menuList[index])
         .hide()
@@ -90,6 +92,7 @@ function App() {
             $(this).remove();
           });
         });
+      console.log($(document).height());
     };
   };
 
