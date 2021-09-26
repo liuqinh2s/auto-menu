@@ -7,11 +7,11 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-self["webpackHotUpdateauto_menu"]("debug",{},
+self["webpackHotUpdateauto_menu"]("auto-menu",{},
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ !function() {
-/******/ 	__webpack_require__.h = function() { return "3eb16294b14fbb70991a"; }
+/******/ 	__webpack_require__.h = function() { return "a851efd675024f6cd174"; }
 /******/ }();
 /******/ 
 /******/ }

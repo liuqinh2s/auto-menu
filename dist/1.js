@@ -311,25 +311,13 @@ eval("if (true) {\n  var lastHash;\n  var upToDate = function upToDate2() {\n   
 
 /***/ }),
 
-/***/ "./src/entry/debug.ts":
-/*!****************************!*\
-  !*** ./src/entry/debug.ts ***!
-  \****************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/assets/1.js":
+/*!*************************!*\
+  !*** ./src/assets/1.js ***!
+  \*************************/
+/***/ (function() {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var file_loader_name_name_ext_assets_index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! file-loader?name=[name].[ext]!../assets/index.html */ \"./node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./src/assets/index.html\");\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvZW50cnkvZGVidWcudHMuanMiLCJtYXBwaW5ncyI6Ijs7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2F1dG9fbWVudS8uL3NyYy9lbnRyeS9kZWJ1Zy50cz8xNWQ5Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnZmlsZS1sb2FkZXI/bmFtZT1bbmFtZV0uW2V4dF0hLi4vYXNzZXRzL2luZGV4Lmh0bWwnIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/entry/debug.ts\n");
-
-/***/ }),
-
-/***/ "./node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./src/assets/index.html":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./src/assets/index.html ***!
-  \****************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"index.html\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvZmlsZS1sb2FkZXIvZGlzdC9janMuanM/bmFtZT1bbmFtZV0uW2V4dF0hLi9zcmMvYXNzZXRzL2luZGV4Lmh0bWwuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYXV0b19tZW51Ly4vc3JjL2Fzc2V0cy9pbmRleC5odG1sP2YyMTIiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyBcImluZGV4Lmh0bWxcIjsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./src/assets/index.html\n");
+eval("var __defProp = Object.defineProperty;\nvar __defProps = Object.defineProperties;\nvar __getOwnPropDescs = Object.getOwnPropertyDescriptors;\nvar __getOwnPropSymbols = Object.getOwnPropertySymbols;\nvar __hasOwnProp = Object.prototype.hasOwnProperty;\nvar __propIsEnum = Object.prototype.propertyIsEnumerable;\nvar __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;\nvar __spreadValues = (a, b) => {\n  for (var prop in b || (b = {}))\n    if (__hasOwnProp.call(b, prop))\n      __defNormalProp(a, prop, b[prop]);\n  if (__getOwnPropSymbols)\n    for (var prop of __getOwnPropSymbols(b)) {\n      if (__propIsEnum.call(b, prop))\n        __defNormalProp(a, prop, b[prop]);\n    }\n  return a;\n};\nvar __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));\nvar __require = undefined;\nfunction jsonp({ url, params, callback }) {\n  return new Promise((resolve, reject) => {\n    let script = document.createElement(\"script\");\n    window[callback] = function(data) {\n      resolve(data);\n      document.body.removeChild(script);\n      delete window[callback];\n    };\n    params = __spreadProps(__spreadValues({}, params), { callback });\n    let arrs = [];\n    for (let key in params) {\n      arrs.push(`${key}=${params[key]}`);\n    }\n    script.src = `${url}?${arrs.join(\"&\")}`;\n    document.body.appendChild(script);\n  });\n}\njsonp({\n  url: \"http://localhost:3000/say\",\n  parmas: { wd: \"Iloveyou\" },\n  callback: \"show\"\n}).then((data) => {\n  console.log(data);\n});\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXNzZXRzLzEuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUVBO0FBQ0E7QUFBQTtBQUFBO0FBSUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hdXRvX21lbnUvLi9zcmMvYXNzZXRzLzEuanM/OGYzOCJdLCJzb3VyY2VzQ29udGVudCI6WyJmdW5jdGlvbiBqc29ucCh7IHVybCwgcGFyYW1zLCBjYWxsYmFjayB9KSB7XG4gIHJldHVybiBuZXcgUHJvbWlzZSgocmVzb2x2ZSwgcmVqZWN0KSA9PiB7XG4gICAgbGV0IHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJzY3JpcHRcIik7XG4gICAgLy8g5re75Yqg5Zue6LCD5pa55rOVXG4gICAgd2luZG93W2NhbGxiYWNrXSA9IGZ1bmN0aW9uIChkYXRhKSB7XG4gICAgICByZXNvbHZlKGRhdGEpO1xuICAgICAgZG9jdW1lbnQuYm9keS5yZW1vdmVDaGlsZChzY3JpcHQpO1xuICAgICAgZGVsZXRlIHdpbmRvd1tjYWxsYmFja107XG4gICAgfTtcbiAgICBwYXJhbXMgPSB7IC4uLnBhcmFtcywgY2FsbGJhY2sgfTtcbiAgICBsZXQgYXJycyA9IFtdO1xuICAgIGZvciAobGV0IGtleSBpbiBwYXJhbXMpIHtcbiAgICAgIGFycnMucHVzaChgJHtrZXl9PSR7cGFyYW1zW2tleV19YCk7XG4gICAgfVxuICAgIHNjcmlwdC5zcmMgPSBgJHt1cmx9PyR7YXJycy5qb2luKFwiJlwiKX1gO1xuICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoc2NyaXB0KTtcbiAgfSk7XG59XG5cbmpzb25wKHtcbiAgdXJsOiBcImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9zYXlcIixcbiAgcGFybWFzOiB7IHdkOiBcIklsb3ZleW91XCIgfSxcbiAgY2FsbGJhY2s6IFwic2hvd1wiLFxufSkudGhlbigoZGF0YSkgPT4ge1xuICBjb25zb2xlLmxvZyhkYXRhKTtcbn0pO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/assets/1.js\n");
 
 /***/ })
 
@@ -416,7 +404,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	!function() {
-/******/ 		__webpack_require__.hmrF = function() { return "debug." + __webpack_require__.h() + ".hot-update.json"; };
+/******/ 		__webpack_require__.hmrF = function() { return "1." + __webpack_require__.h() + ".hot-update.json"; };
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
@@ -887,7 +875,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			"debug": 0
+/******/ 			"1": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1399,7 +1387,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=liuqindemacbook-pro.local&port=8082&pathname=%2Fws&logging=info");
 /******/ 	__webpack_require__("./node_modules/webpack/hot/only-dev-server.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/entry/debug.ts");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/assets/1.js");
 /******/ 	auto_menu = __webpack_exports__;
 /******/ 	
 /******/ })()

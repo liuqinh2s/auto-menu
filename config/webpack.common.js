@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     "auto-menu": "./src/entry/auto-menu.ts",
     debug: "./src/entry/debug.ts",
+    1: "./src/assets/1.js",
   },
   output: {
     library: "auto_menu",
